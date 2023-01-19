@@ -1,0 +1,73 @@
+:root {
+    --primary:var(--primary)
+    --secondary: 
+    --tertiary: 
+    --dark: 
+    --light: 
+}
+
+.search-column{
+    background-color: ;
+}
+
+.list-group-item{
+    background-color: ;
+    line-height: ;
+    border: ;
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+    color:aliceblue
+}
+
+.card-body{
+    flex: ;
+    background: ;
+}
+
+/*button*/
+.btn {
+    background-color: ;
+    color: ;
+    border-radius: ;
+    font-family: ;
+    font-size: ;
+    font-weight: ;
+    border-color: ;
+    border: ;
+    width: ;
+    margin-top: ;
+    margin-bottom: ;
+}
+
+/*UV Index Colors*/
+
+.span.severe{
+    padding: ;
+    background-color: ;
+    color: ;
+}
+
+span.moderate{
+    padding: ;
+    background-color: ;
+    color: ;
+}
+
+span.favorable{
+    padding: ;
+    background-color: ;
+    color: ;
+}
+
+/*Gradient Colors*/
+
+body {
+    background: ;
+    background-size: ;
+    animation: ;
+}
+
+@keyframes gradient {
+    
+}
