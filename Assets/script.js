@@ -8,7 +8,6 @@ var forecastTitle = document.querySelector("#forecast");
 var forecastContainerEl = document.querySelector("#fiveday-container");
 var pastSearchButtonEl = document.querySelector("#past-search-buttons");
 
-
 //set an unique API to a variable
 const apiKey = "d85561a519f7331fb2a3d44c69713388"
 
@@ -156,12 +155,12 @@ var display5Day = function(weather){
        forecastEl.appendChild(forecastDate);
 
        
-       //set an image element
+       // image element
        var weatherIcon = document.createElement("img")
        weatherIcon.classList = "card-body text-center";
        weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${dailyForecast.weather[0].icon}@2x.png`);  
 
-       //append to forecast card
+       //append to card
        forecastEl.appendChild(weatherIcon);
        
        //set temperature span
@@ -169,14 +168,14 @@ var display5Day = function(weather){
        forecastTempEl.classList = "card-body text-center";
        forecastTempEl.textContent = dailyForecast.main.temp + " °F";
 
-        //append to forecast card
+        //append to card
         forecastEl.appendChild(forecastTempEl);
 
        var forecastHumEl=document.createElement("span");
        forecastHumEl.classList = "card-body text-center";
        forecastHumEl.textContent = dailyForecast.main.humidity + "  %";
 
-       //append to forecast card
+       //append to card
        forecastEl.appendChild(forecastHumEl);
 
         // console.log(forecastEl);
