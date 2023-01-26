@@ -1,7 +1,7 @@
 :root {
-    --primary: rgb(10, 139, 139);
+    --primary: rgb(0,128,128);
     --secondary: rgb(54, 78, 216);
-    --tertiary: rgb(13, 141, 141);
+    --tertiary: rgb(234, 245, 20);
     --dark: rgba(28, 29, 33, 1);
     --light: rgba(238, 238, 247, 1);
 }
@@ -63,7 +63,7 @@ span.favorable{
 body {
    background: linear-gradient(-45deg, #a1cba5, #d886b9, #5f9aaf, #8cec94);
    background-size: 1000% 1000%;
-   animation: gradient 14s ease infinite;
+   animation: gradient 13s ease infinite;
     }
 
 @keyframes gradient {
