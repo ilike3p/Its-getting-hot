@@ -9,7 +9,7 @@ var forecastContainerEl = document.querySelector("#fiveday-container");
 var pastSearchButtonEl = document.querySelector("#past-search-buttons");
 
 //set an unique API to a variable
-const apiKey = "150d9a860e1f4d7f28fd07b3af315208"
+const apiKey = "d85561a519f7331fb2a3d44c69713388"
 
 var formSumbitHandler = function(event){
     event.preventDefault();
@@ -29,6 +29,7 @@ var formSumbitHandler = function(event){
 var saveSearch = function(){
     localStorage.setItem("cities", JSON.stringify(cities));
 };
+
 var getCityWeather = function(city){
     var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
 
@@ -154,12 +155,12 @@ var display5Day = function(weather){
        forecastEl.appendChild(forecastDate);
 
        
-       // image element
+       //set an image element
        var weatherIcon = document.createElement("img")
        weatherIcon.classList = "card-body text-center";
        weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${dailyForecast.weather[0].icon}@2x.png`);  
 
-       //append to card
+       //append to forecast card
        forecastEl.appendChild(weatherIcon);
        
        //set temperature span
@@ -167,14 +168,14 @@ var display5Day = function(weather){
        forecastTempEl.classList = "card-body text-center";
        forecastTempEl.textContent = dailyForecast.main.temp + " °F";
 
-        //append to card
+        //append to forecast card
         forecastEl.appendChild(forecastTempEl);
 
        var forecastHumEl=document.createElement("span");
        forecastHumEl.classList = "card-body text-center";
        forecastHumEl.textContent = dailyForecast.main.humidity + "  %";
 
-       //append to card
+       //append to forecast card
        forecastEl.appendChild(forecastHumEl);
 
         // console.log(forecastEl);
