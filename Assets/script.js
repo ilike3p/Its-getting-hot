@@ -9,7 +9,7 @@ var forecastContainerEl = document.querySelector("#fiveday-container");
 var pastSearchButtonEl = document.querySelector("#past-search-buttons");
 
 //set an unique API to a variable
-const apiKey = "150d9a860e1f4d7f28fd07b3af315208"
+const apiKey = "c3c063628037c3d8ca5e5c04070a247b"
 
 var formSumbitHandler = function(event){
     event.preventDefault();
