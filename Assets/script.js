@@ -31,7 +31,7 @@ var saveSearch = function(){
 };
 
 var getCityWeather = function(city){
-    var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`
+    var apiURL = `https://api.openweathermap.org//data/2.5/weather?q=${city}&units=imperialappid=${apiKey}`
 
     fetch(apiURL)
     .then(function(response){
@@ -97,6 +97,7 @@ var getUvIndex = function(lat,lon){
         });
     });
     //console.log(lat);
+    
     //console.log(lon);
 }
  
