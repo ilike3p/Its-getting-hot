@@ -31,7 +31,7 @@ var saveSearch = function(){
 };
 
 var getCityWeather = function(city){
-    var apiURL = `https://api.openweathermap.org//data/2.5/weather?q=${city}&units=imperialappid=${apiKey}`
+    var apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
 
     fetch(apiURL)
     .then(function(response){
