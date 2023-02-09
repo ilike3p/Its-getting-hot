@@ -8,7 +8,7 @@ var forecastTitle = document.querySelector("#forecast");
 var forecastContainerEl = document.querySelector("#fiveday-container");
 var pastSearchButtonEl = document.querySelector("#past-search-buttons");
 
-//set an unique API to a variable
+//set a unique API to a variable
 const apiKey = "c3c063628037c3d8ca5e5c04070a247b"
 
 var formSumbitHandler = function(event){
@@ -31,7 +31,7 @@ var saveSearch = function(){
 };
 
 var getCityWeather = function(city){
-    var apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
+    var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},&APPID=${apiKey}`
 
     fetch(apiURL)
     .then(function(response){
